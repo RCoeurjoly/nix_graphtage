@@ -11,6 +11,9 @@
         poetrylock = ./poetry.lock;
       };
     in {
-      devShell.x86_64-linux = myPoetryEnv;
+
+      devShell.x86_64-linux = myPoetryEnv.env.overrideAttrs (oldAttrs: {
+        buildInputs = with pkgs; [ poetry ];
+      });
     };
 }
