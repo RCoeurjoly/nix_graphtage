@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "graphtage-tool"
+version = "0.1.0"
+description = ""
+authors = ["Roland Coeurjoly <rolandcoeurjoly@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+graphtage = "^0.2.5"
+wildq = "^1.1.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
